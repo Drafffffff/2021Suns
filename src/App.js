@@ -1,6 +1,6 @@
 import "./App.css";
-import { HashRouter  as Router, Route, useParams } from "react-router-dom";
-
+import { HashRouter as Router, Route, useParams } from "react-router-dom";
+import Home from "./mainPage";
 function App() {
   return (
     <div className="App">
@@ -15,9 +15,5 @@ function App() {
   );
 }
 
-function Home() {
-  let { userId } = useParams();
-  return <h2>{userId}</h2>;
-}
 
 export default App;
