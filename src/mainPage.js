@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import P5canvas from "./components/p5canvas";
+import Manual from "./components/manual"
 const AV = require("leancloud-storage");
 function Home() {
   // const [deltTime, setDeltTime] = useState(0);
@@ -20,10 +21,7 @@ function Home() {
     query.find().then(i => {
       if (i[0]) {
         userData = i[0].attributes;
-        // setDeltTime(
-        //   Math.floor(userData.brithTime),
-        //   -Math.floor(userData.finishTime)
-        // );
+
         let list = [
           userData.a,
           userData.b,
@@ -32,7 +30,6 @@ function Home() {
           userData.e,
           userData.f,
         ];
-        console.log(list);
         setParamList(list);
       }
     });
@@ -42,6 +39,7 @@ function Home() {
     <div className="Home">
       <h2>{userId}</h2>
       {paramList.length > 0 && <P5canvas paramList={paramList} />}
+      <Manual/>
     </div>
   );
 }

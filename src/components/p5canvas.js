@@ -18,14 +18,13 @@ class App extends React.Component {
     // console.log(this.props.rs);
     p5.frameRate(30);
     this.rs = this.props.rs;
-
   };
 
   draw = p5 => {
-
-    p5.background(220);
-    p5.fill(255, 200);
-    p5.stroke(0, 0, 0, 150);
+    p5.background(255);
+    p5.noFill();
+    p5.stroke(0, 0, 0);
+    p5.strokeWeight(2);
     let offset = p5.width / 20;
     let x = offset;
     let y = offset;
