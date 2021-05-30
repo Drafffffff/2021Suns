@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Router>
         <div>
-          <Route path="/2021SunsGraduationEh/:userId">
+          <Route path="/:userId">
             <Home />
           </Route>
         </div>
