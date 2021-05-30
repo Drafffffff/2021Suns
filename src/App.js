@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, useParams } from "react-router-dom";
+import { HashRouter  as Router, Route, useParams } from "react-router-dom";
 
 function App() {
   return (
