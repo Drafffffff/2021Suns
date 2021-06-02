@@ -38,9 +38,13 @@ function Home() {
           setCallText("步履匆匆的行路人");
           setCallTexten("Walker in rush");
         } else if (userData.textFlag === "1") {
-          setCallText("闲庭信步的漫游者");
-          setCallTexten("Chill Flâneur");
+          setCallText("闲庭信步的探路者");
+          setCallTexten("Explorer with pride");
         } else if (userData.textFlag === "2") {
+          setCallText("悠然自得的漫游者");
+          setCallTexten("Chill Flâneur");
+        }
+        else if (userData.textFlag === "2") {
           setCallText("夏日芳香的梦旅人");
           setCallTexten("Summer Traveller");
         }
